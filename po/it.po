@@ -1,0 +1,94 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: index.html:104 index.html:97
+msgid "1 Propriety"
+msgid_plural "{{$count}} proprieties"
+msgstr[0] "1 correttezza"
+msgstr[1] "corretezzi"
+
+#: index.html:27
+msgid "About"
+msgstr "A proposito"
+
+#: index.html:35
+msgid "Action"
+msgstr "Actione"
+
+#: index.html:117
+msgid "Blog Search"
+msgstr "Ricerca in Blog"
+
+#: index.html:30
+msgid "Contact"
+msgstr "Contatto"
+
+#: index.html:56
+msgid "English"
+msgstr "Inglese"
+
+#: index.html:59
+msgid "French"
+msgstr "Francese"
+
+#: index.html:24
+msgid "Home"
+msgstr "Casa"
+
+#: index.html:84
+msgid ""
+"In this example the translation is not split if there is <b>a variable</b>\n"
+"                            {{env.myVar}} in between the text"
+msgstr ""
+
+#: index.html:79
+msgid ""
+"In this example the translation is not split if there is <b>a variable</b>\n"
+"                        {{env.myVar}} in between the text"
+msgstr ""
+
+#: index.html:62
+msgid "Italian"
+msgstr "Italiano"
+
+#: index.html:74
+msgid "Page Heading"
+msgstr "Il titolo della pagina"
+
+#: index.html:76
+msgid "This is a simple text"
+msgstr "Questo file è un semplice file di testo ASCII."
+
+#: index.html:103
+msgid "You have access to"
+msgstr "Potete vedere"
+
+#~ msgid "&larr; Older"
+#~ msgstr "<span class=\"meta-nav\">&larr;</span> Più vecchio"
+
+#~ msgid "Blog Post Title"
+#~ msgstr "Il Blog titolo"
+
+#~ msgid "Newer &rarr;"
+#~ msgstr "Nuovo"
+
+#~ msgid ""
+#~ "Page Heading {{hello}}\n"
+#~ "                    <small>Secondary Text</small>"
+#~ msgstr ""
+#~ "Titolo della pagina {{hello}}\n"
+#~ "                    <small>Texto Secondario</small>"
+
+#~ msgid "Start Bootstrap"
+#~ msgstr "inizzio Bootstrap"

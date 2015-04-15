@@ -1,0 +1,92 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: index.html:104 index.html:97
+msgid "1 Propriety"
+msgid_plural "{{$count}} proprieties"
+msgstr[0] "1 Proprietee"
+msgstr[1] "{{$count}} proprietiees..."
+
+#: index.html:27
+msgid "About"
+msgstr "A propos"
+
+#: index.html:35
+msgid "Action"
+msgstr "Action"
+
+#: index.html:117
+msgid "Blog Search"
+msgstr "Recherche dans le blog"
+
+#: index.html:30
+msgid "Contact"
+msgstr "Contactez"
+
+#: index.html:56
+msgid "English"
+msgstr "Anglais"
+
+#: index.html:59
+msgid "French"
+msgstr "Français"
+
+#: index.html:24
+msgid "Home"
+msgstr "Accueil"
+
+#: index.html:84
+msgid ""
+"In this example the translation is not split if there is <b>a variable</b>\n"
+"{{env.myVar}} in between the text"
+msgstr ""
+"Dans cet example le texte n'est pas separee avec <b>la variable</b>\n"
+"{{env.myVar}}  dans le texte"
+
+#: index.html:79
+msgid ""
+"In this example the translation is not split if there is <b>a variable</b>\n"
+"{{env.myVar}} in between the text"
+msgstr ""
+"Dans cet example le texte n'est pas separee avec <b>la variable</b>\n"
+"{{env.myVar}}  dans le texte"
+
+#: index.html:62
+msgid "Italian"
+msgstr "Italien"
+
+#: index.html:74
+msgid "Page Heading"
+msgstr "Titre de la page"
+
+#: index.html:76
+msgid "This is a simple text"
+msgstr "Ceci est un texte simple"
+
+#: index.html:103
+msgid "You have access to"
+msgstr "Vous avez acces "
+
+#~ msgid "Blog Post Title"
+#~ msgstr "Titre du Blog Post"
+
+#~ msgid ""
+#~ "Page Heading {{hello}}\n"
+#~ "<small>Secondary Text</small>"
+#~ msgstr ""
+#~ "Titre de la page {{hello}}\n"
+#~ "<small>Texte secondaire</small>"
+
+#~ msgid "Start Bootstrap"
+#~ msgstr "Lancer Bootstrap"

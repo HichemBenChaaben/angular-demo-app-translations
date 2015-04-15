@@ -1,0 +1,59 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.7.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
+
+#: index.html:79 index.html:86
+msgid "1 Propriety"
+msgid_plural "{{$count}} proprieties"
+msgstr[0] ""
+msgstr[1] ""
+
+#: index.html:27
+msgid "About"
+msgstr ""
+
+#: index.html:35
+msgid "Action"
+msgstr ""
+
+#: index.html:96
+msgid "Blog Search"
+msgstr ""
+
+#: index.html:30
+msgid "Contact"
+msgstr ""
+
+#: index.html:56
+msgid "English"
+msgstr ""
+
+#: index.html:59
+msgid "French"
+msgstr ""
+
+#: index.html:24
+msgid "Home"
+msgstr ""
+
+#: index.html:62
+msgid "Italian"
+msgstr ""
+
+#: index.html:74
+msgid "Page Heading"
+msgstr ""
+
+#: index.html:85
+msgid "You have access to"
+msgstr ""

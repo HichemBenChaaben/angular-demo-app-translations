@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Blog Home - Start Bootstrap Template</title>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body ng-app="app" ng-controller="mainCtrl" ng-cloak lang="{{pageLang}}" dir="{{pageDir}}">
+        <!-- Navigation -->
+        <div id="navbar" class="navbar-collapse navbar-inverse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#" translate>Home</a>
+                </li>
+                <li>
+                    <a href="#" translate>About</a>
+                </li>
+                <li>
+                    <a href="#" translate>Contact</a>
+                </li>
+                <li class="dropdown">
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="#" translate>Action</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href ng-click="setBase()" translate>English</a>
+                </li>
+                <li>
+                    <a href ng-click="setLang('ar')">عربي</a>
+                </li>
+                <li>
+                    <a href ng-click="setLang('fr')" translate>French</a>
+                </li>
+                <li>
+                    <a href ng-click="setLang('it')" translate>Italian</a>
+                </li>
+                <li>
+                    <a href ng-click="setLang('de')"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row">
+                <!-- Blog Entries Column -->
+                <div class="col-md-12">
+                    <h1 class="page-header" translate>Page Heading</h1>
+                    <h2 translate>Translate and update a simple text</h2>
+                    <translate>This is a simple text</translate>
+                    <h2>Embeded variables example</h2>
+                    <p translate>
+                        In this example the translation is not split if there is <b>a variable</b>
+                        {{env.myVar}} in between the text
+                    </p>
+                    <code ng-non-bindable style="display:block">
+                        <p translate>
+                            In this example the translation is not split if there is <b>a variable</b>
+                            {{env.myVar}} in between the text
+                        </p>
+                                VS<br/>
+                            {{myText1}} {{env.MyVar}} {{myText2}}
+
+                    </code>
+
+                    <!-- First Blog Post -->
+                    <h2>Pluralize example</h2>
+                    <p class="lead">
+                        <translate>You have access to</translate>
+                        <a href translate
+                            translate-n="env.registers"
+                            translate-plural="{{$count}} proprieties"> 1 Propriety</a>
+                    </p>
+
+                    <p class="lead">
+                        <translate>You have access to</translate>
+                        <a href translate
+                            translate-n="env.singleRegister"
+                            translate-plural="{{$count}} proprieties"> 1 Propriety</a>
+                    </p>
+
+                    <p class="lead">
+                        <translate>You have access to</translate>
+                        <a href translate
+                            translate-n="env.multipleRegister"
+                            translate-plural="{{$count}} proprieties"> 1 Propriety</a>
+                    </p>
+                    <p class="lead">
+                        <translate>You have access to</translate>
+                        <a href translate
+                            translate-n="env.twoRegisters"
+                            translate-plural="{{$count}} proprieties"> 1 Propriety</a>
+                    </p>
+                    <h2 translate>Missing translations detections</h2>
+                    <p>This translation is missing</p>
+                </div>
+            </div>
+            <!-- /.row -->
+            <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </footer>
+    </div>
+    <!-- /.container -->
+    <!-- jQuery -->
+    <script src="bower_components/angularjs/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="bower_components/angular-gettext/dist/angular-gettext.min.js"></script>
+</body>
+</html>
