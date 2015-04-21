@@ -1,5 +1,3 @@
-msgid ""
-msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
@@ -12,15 +10,10 @@ msgstr ""
 "X-Generator: Poedit 1.7.5\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: index.html:104 index.html:97
-msgid "1 Propriety"
-msgid_plural "{{$count}} proprieties"
-msgstr[0] "1 Proprietee"
-msgstr[1] "{{$count}} proprietiees..."
 
 #: index.html:27
-msgid "About"
-msgstr "A propos"
+msgid "About us"
+msgstr "A propos de nous memes"
 
 #: index.html:35
 msgid "Action"
@@ -78,15 +71,3 @@ msgstr "Ceci est un texte simple"
 msgid "You have access to"
 msgstr "Vous avez acces "
 
-#~ msgid "Blog Post Title"
-#~ msgstr "Titre du Blog Post"
-
-#~ msgid ""
-#~ "Page Heading {{hello}}\n"
-#~ "<small>Secondary Text</small>"
-#~ msgstr ""
-#~ "Titre de la page {{hello}}\n"
-#~ "<small>Texte secondaire</small>"
-
-#~ msgid "Start Bootstrap"
-#~ msgstr "Lancer Bootstrap"

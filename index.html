@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head ng-cloak>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,19 +8,24 @@
         <meta name="author" content="">
         <title>Blog Home - Start Bootstrap Template</title>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+              display: none !important;
+            }
+        </style>
     </head>
-    <body ng-app="app" ng-controller="mainCtrl" ng-cloak lang="{{pageLang}}" dir="{{pageDir}}">
+    <body ng-app="app" ng-controller="mainCtrl" ng-cloak lang="{{pageLang}}" dir="{{pageDir}}" ng-cloak>
         <!-- Navigation -->
-        <div id="navbar" class="navbar-collapse navbar-inverse collapse">
+        <div id="navbar" class="navbar-collapse navbar-inverse collapse" ng-cloak>
             <ul class="nav navbar-nav">
                 <li class="active">
-                    <a href="#" translate>Home</a>
+                    <a href="#" translate>Home page</a>
                 </li>
                 <li>
-                    <a href="#" translate>About</a>
+                    <a href="#" translate>About us</a>
                 </li>
                 <li>
-                    <a href="#" translate>Contact</a>
+                    <a href="#" translate>Contact of somthing</a>
                 </li>
                 <li class="dropdown">
                     <ul class="dropdown-menu" role="menu">
@@ -32,41 +37,58 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href ng-click="setBase()" translate>English</a>
+                    <a href ng-click="setBase()">English</a>
                 </li>
                 <li>
-                    <a href ng-click="setLang('ar')">عربي</a>
+                    <a href ng-click="setLang('ar', 'ar-tn')">عربي</a>
+                </li>
+                 <li>
+                    <a href ng-click="setLang('en_121', 'en-us')">The New Region</a>
+                </li>
+
+                <li>
+                    <a href ng-click="setLang('fr', 'fr-fr')">French</a>
                 </li>
                 <li>
-                    <a href ng-click="setLang('fr')" translate>French</a>
+                    <a href ng-click="setLang('it', 'it')">Italian</a>
                 </li>
                 <li>
-                    <a href ng-click="setLang('it')" translate>Italian</a>
-                </li>
-                <li>
-                    <a href ng-click="setLang('de')"></a>
+                    <a href ng-click="setLang('de', 'de-de')">Deutsh</a>
                 </li>
             </ul>
         </div>
         <!-- Page Content -->
         <div class="container">
             <div class="row">
+                <div>{{i18n("page.key", {"0": obj.field})}}</div>
+                <h4>Popup</h4>
+               <div class="row"  id="picker">
+                   <div class="col-md-6">
+                       <p class="input-group">
+                         <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                         <span class="input-group-btn">
+                           <button type="button" class="btn btn-default" ng-click="open($event); updateLocale(this);"><i class="glyphicon glyphicon-calendar"></i></button>
+                         </span>
+                       </p>
+                   </div>
+               </div>
+            </div>
+            <div class="row">
                 <!-- Blog Entries Column -->
                 <div class="col-md-12">
                     <h1 class="page-header" translate>Page Heading</h1>
-                    <h2 translate>Translate and update a simple text</h2>
-                    <translate>This is a simple text</translate>
-                    <h2>Embeded variables example</h2>
                     <p translate>
                         In this example the translation is not split if there is <b>a variable</b>
                         {{env.myVar}} in between the text
                     </p>
                     <code ng-non-bindable style="display:block">
+
                         <p translate>
-                            In this example the translation is not split if there is <b>a variable</b>
+                           in between the text  In this example the translation is not split if there is <b>a variable</b>
                             {{env.myVar}} in between the text
                         </p>
                                 VS<br/>
+
                             {{myText1}} {{env.MyVar}} {{myText2}}
 
                     </code>
@@ -119,7 +141,11 @@
     <!-- /.container -->
     <!-- jQuery -->
     <script src="bower_components/angularjs/angular.min.js"></script>
-    <script src="app.js"></script>
     <script src="bower_components/angular-gettext/dist/angular-gettext.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular-route.js"></script>
+    <script src="tmhDynamicLocale.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

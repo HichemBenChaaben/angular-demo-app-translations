@@ -20,7 +20,7 @@ gulp.task('translations', function() {
 });
 gulp.task('watch', function() {
     gulp.watch('po/**/*.po', ['pot', 'translations']);
-    gulp.watch('index.html', ['pot', 'translations']);
+    gulp.watch('index.html', ['translations']);
 });
 
 gulp.task('default', ['pot', 'translations', 'watch']);
