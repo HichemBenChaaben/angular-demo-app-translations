@@ -1,0 +1,15 @@
+# Ignored node modules
+node_modules/
+
+# SASS cache files
+.sass-cache/
+
+# Ignore css map files
+public/assets/css/**/*.map
+*.css.map
+
+# jetbeans webstorm files
+./idea
+
+# ignore .mo files
+po/*.mo
